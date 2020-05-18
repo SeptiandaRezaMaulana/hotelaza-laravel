@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 
 class KamarController extends Controller {
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function index() {
         $client     = new Client();
         $request    = $client->get('http://localhost/pesanHotel/server/api/kamar');

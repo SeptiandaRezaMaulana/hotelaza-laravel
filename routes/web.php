@@ -33,6 +33,6 @@ Route::get('/welcome', function () {
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'KamarController@index');
+Route::get('/', 'IndexController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/kamar/detail/{id}', 'KamarController@detailKamar');

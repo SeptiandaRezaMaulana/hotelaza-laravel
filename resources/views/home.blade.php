@@ -2,7 +2,7 @@
 
 @section('konten')
             <div class="card">
-                <div class="card-header" style="background-color: #3490dc;color:white">Dashboard</div>
+                <div class="card-header" style="background-color: #C0C0C0;color:black">Dashboard</div>
 
                 <div class="card-body">
                     @if (session('status'))
